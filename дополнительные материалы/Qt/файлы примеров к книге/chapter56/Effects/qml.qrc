@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file alias = "Alina.jpg">../../common/Alina.jpg</file>
+        <file alias = "balalaika.png">../../common/balalaika.png</file>
+    </qresource>
+</RCC>

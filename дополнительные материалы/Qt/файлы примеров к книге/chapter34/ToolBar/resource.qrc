@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file alias = "img1.png">imgs/img1.png</file>
+        <file alias = "img2.png">imgs/img2.png</file>
+        <file alias = "img3.png">imgs/img3.png</file>
+        <file alias = "img4.png">imgs/img4.png</file>
+    </qresource>
+</RCC>

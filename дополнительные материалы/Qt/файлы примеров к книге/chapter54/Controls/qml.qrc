@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file alias = "Windows.jpg">../../common/Windows.jpg</file>
+        <file alias = "Linux.jpg">../../common/Linux.jpg</file>
+        <file alias = "MacOSX.jpg">../../common/MacOSX.jpg</file>
+        <file alias = "Android.jpg">../../common/Android.jpg</file>
+    </qresource>
+</RCC>

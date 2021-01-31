@@ -1,0 +1,177 @@
+\documentclass[14pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[russianb]{babel}
+\usepackage[left=1.5cm,right=1.5cm,top=2cm,bottom=2.5cm]{geometry}
+\usepackage{setspace}
+\usepackage{indentfirst}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{array}
+\usepackage[pdftex]{graphicx}
+\usepackage{comment}
+\usepackage{amsfonts}
+
+
+
+\graphicspath{{images/}}
+\renewcommand{\baselinestretch}{1.3}
+
+\begin{document}
+
+\textbf{Математический анализ}
+
+Предел последовательности
+
+Теорема: Последовательность $a_n= (1+ \frac{1}{n})^n$ монотонно возрастает и ограничена.
+
+$ 1+1, (1+\frac{1}{2})^2, ... \; (1+\frac{1}{15000000})^{15000000} <  e \approx  2,718... $ \\
+
+$ (a+b)^k = C^0_k * a^k + C^1_k * a^{k-1} * b + ... + C^m_k * a^{k-m} * b^m + C^k_k * b^k \; ; \; C^k_n = \frac{n!}{k!(n-k)!} $ \\
+
+$a_n = (1+\frac{1}{n})^n 
+= 1 +n * \frac{1}{n} + \frac{n(n-1)}{2} * \frac{1}{n^2} + ... \frac{n(n-1)(n-2) ...(n-k+1)}{k!} * \frac{1}{n^k} + ... + \frac{1}{n^2} 
+= 2 + \frac{(1-\frac{1}{n})}{2!} +\frac{(1-\frac{1}{n})(1-\frac{2}{n})}{3!} + ... + \frac{(1-\frac 1n)(1 - \frac 2n)...(1-\frac{k-1}{n})}{k!} + ... + \frac{(1-\frac{1}{n})...(1-\frac{n-1}{n})}{n!} $ \\
+
+$a_{n+1} = (1+\frac{1}{n+1})^{n+1} = 2 + \frac{1+\frac{1}{n+1}}{2!} + \frac{(1 + \frac{1}{n+1})(1 + \frac{2}{n+1})}{3!} + ... + \frac{(1+\frac{1}{n+1})(1+\frac{2}{n+1})...(1-\frac{k-1}{n+1})}{k!} + \frac{(1+\frac{1}{n+1})...(1-\frac{n-1}{n+1})}{n!} + \frac{(1 + \frac{1}{n+1})...(1+\frac{n}{n+1})}{(n+1)!} $
+
+Задано для любого n $a_{n+1} > a_n $ \\ 
+
+$a_n < 2 + \frac{1}{2!} + \frac{n}{3!} + ... + \frac{1}{k!} + ... +  \frac{1}{n!} < 2 + \frac 12 + \frac 14 + \frac 18 ... + \frac 1{2^{n-1}} = 2 + (1 - \frac {1}{2^{n-1}} = 3 - \frac{1}{2^{n-1}} $ т.к. $\frac{1}{n!} < \frac{1}{2^{n-1}} \; \forall n \ge  2 $
+
+$\frac{1}{n*(n-1)...*2*1} < \frac{1}{(2*2*...*2)_{n-1}}$ \\
+
+Опр. $\lim\limits_{n \rightarrow \infty} a_n = + \infty <=> \forall \varepsilon > 0 \; \exists \; N(\varepsilon) : \forall n>N_{\varepsilon}, \; n\in N => a_n > \varepsilon $ \\
+
+Опр. $\lim\limits_{n \rightarrow \infty} a_n = - \infty <=> \forall \varepsilon > 0 \; \exists \; N(\varepsilon) : \forall n>N_{\varepsilon}, \; n\in N => a_n < - \varepsilon $ \\
+
+Опр. $u_{R} (+\infty) = \{ x \in R : x>R \} => \lim\limits_{n \rightarrow \infty} a_n = + \infty <=> \forall R>0 \; \exists \; N_R : \forall n > N_R => a_n \in u_R (+\infty)$ \\
+
+Опр. $ \lim\limits_{n \rightarrow \infty} a_n = \infty <=> \lim\limits_{n \rightarrow \infty} |a_n| = +\infty$  \\
+
+Пример
+
+Опр. $\{a_n\}$ называется бесконечно большой, если $\lim\limits_{n \rightarrow \infty} a_n = \infty $ \\
+
+Опр. $\{b_n\}$ называется бесконечно малой, если $\lim\limits_{n \rightarrow \infty} b_n = 0$ \\
+
+Пример: если $\{a_n\}$ - бесконечно большая, то $b_n = \frac{1}{a_n}$ - бесконечно малая.
+
+\newpage
+
+\textbf{Принцип вложенных отрезков} % (отцентрировать)\\
+
+Теорема: пусть $\{[a_n, \; b_n]\}$ - система отрезков такая, что $I_{n+1} = [a_n+1, \; b_n+1] \subset I_n[a_n, \; b_n] $ и кроме того заметим, что $\exists \lim\limits_{n \rightarrow \infty} (b_n - a_n) = 0 $
+
+Тогда существует единственная такая $C \in \mathbb{R}$, что C = $ \bigcap\limits^{\infty}_{n = 1} [a_n, \; b_n] $
+
+\textit{Тут доказательство теоремы должно быть, хз нужно ли оно} \\
+
+Опр. Число $a\in \mathbb{R}$ называется точной верхней(нижней) границей множества $x \in X$ , если:
+
+1) $\forall x\in X => x \le M (x\ge M)$
+
+2) $\forall \varepsilon > 0 \; \exists \; x_{\varepsilon} \in X : M-\varepsilon < X_{\varepsilon} \le M (M \le X_{\varepsilon} < M + \varepsilon)$
+
+
+
+Обозначим $\sup X = M ($inf $X = M)$
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.3\linewidth]{../../Downloads/Matan_16_09_1}
+\end{figure}
+
+
+$\sup(0;1)= 1, \; \inf(0;1) = 0$
+
+Теорема: Всякая ограниченное сверху(снизу) множество X имеет точную верхнюю (нижнюю) грань.
+
+$\underline{Доказательство:}$
+
+$\exists M_1 : x\in X => x<M_1 $
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.3\linewidth]{../../Downloads/Matan_16_09_2}
+\end{figure}
+
+Пусть $x_1 \in X$ - любой $I_1 = [x_1, M_1]$, делим пополам  и из двух отрицательных выбираем самый правый, содержащий хотя бы один $x \in X$ - $I_2$ - повторяем предыдущий шаг - $I_3$ c $I_2$ строим аналогично (правее получившегося отрицательного нет ни одной $ x \in X$)
+
+Получаем систему $I_n$ вложенных отрезков, тогда по теореме $ \exists! \; C = \bigcap\limits^{\infty}_{n = 1} \; I_n $, тогда $C = \sup X$
+
+Пусть $I_n = [a_n;b_n]$, по построению  $X\le b_n \; \forall n$, то $C = \lim\limits_{n \rightarrow \infty} b_n => X\le C$
+
+Пусть $\varepsilon > 0 $
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.55\linewidth]{../../Downloads/Matan_16_09_3}
+\end{figure}
+
+$ $
+
+$ $
+
+$ $
+
+Пусть $\{a_n\}$ - некоторая грань, и $a_{i1}, a_{i2},... a_{ik}$ такие, что $a_{ij} \in \{a_n\} i_1\le i_2 \le ... \le i_k$
+
+Тогда $a_ik $ - подпоследовательность последовательности $\{ a_n\} $
+
+Пример: $\{ a_n \} = (-1)^n $
+
+\quad\quad\quad\quad\quad U
+
+\quad\quad\quad\quad $ \{ a_{2k}\} = \{ 1, 1, 1, ... 1, 1 ... \} $ - подпоследовательность
+
+$\underline{Теорема ( Больцано - Вейерштрасса):}$
+
+Из всякой ограниченной последовательности  $\{ a_n \}$ можно выбрать такую подпоследовательность $ \{ a_{n_{k}} \} : \exists \lim\limits_{k \rightarrow \infty} a_{n_{k}} = A, A \in \mathbb{R}$
+
+Доказательство:
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.5\linewidth]{../../Downloads/Matan_16_09_4}
+\end{figure}
+
+$I_0 = [-M; M]$, выбираем $\forall a_{i1} \in I_0$, делим $I_0$ пополам, из двух отрезков выбираем тот, в котором содержится бесконечное число членов последовательности $\{a_n\}$ - $I_1$ и в $I_1$ выбираем любой $a_{i2} : i_2 > i_1$
+
+Повторем шаг: из $I_2$  выбираем $a_i3 : i_3 > i_2$
+
+Получаем последовательность $\{ a_{in}\}$, где $a_{ik} \in I_{k-1}$, но $\{I_k\}$ - система вложенных отрезков => $\lim\limits_{k \rightarrow \infty} a_{ik} = C$, где $C=\bigcap\limits^{\infty}_{k=1 I_{k}}$
+
+Пусть $I_k = [d_k, e_k]$
+
+$d_{k-1} \le a_{ik} \le e_{k-1}$, т.к. $a_{ik} \in I_{k-1}$, но $\lim\limits_{k \rightarrow \infty} d_k = C$, $ \lim\limits_{k \rightarrow \infty} e_k = C => \lim\limits_{k \rightarrow \infty} a_{ik} = C$ (по теореме о двух м-рах)
+
+Опр. точка(число) $a \in \mathbb{R}$ называется предельной точкой последовательности $\{a_n\}$, если $\exists \{a_{n_{k}}\} \subset \{a_n\}$ - подпоследовательность $=> \lim\limits_{n \rightarrow \infty} a_{n_{k}} = a$
+
+Пример $a_n = (-1)^n$ имеет две предельные точки - $A_1=1, A_2=-1$
+
+$\{a_{2n}\} \subset \{a_k\}$
+
+$\{a_{2n}\} = \{1, 1, 1, 1, 1...\}$ - сходится к 1
+
+$\{a_{2n+1}\} \subset  \{a_k\}$
+
+$\{a_{2n+1}\} = \{-1, -1, -1, -1...\}$
+
+$\underline{Предложение}$ Пусть $\{b_n\}$ - произвольная последовательность $b_n \in \mathbb{R}$, тогда $\exists \{a_n\}$ - последовательность: $\forall b_n$ есть предельная точка последовательности $\{a_n\}$
+
+$\underline{Доказательство}$:
+
+\begin{tabular}{|cccc|}
+	$b_1$& $b_2$  & $b_3$ & ... \\
+	$b_1+1$& $b_2+1$  & $b_3+1$ & ... \\
+	$b_1+\frac 12$ & $b_2+\frac 12$  & $b_3+\frac 12$ & ... \\
+	$b_1+\frac 13$& ...  & ...  & ...  \\
+	...&$b_2+\frac 1k$  & ... & ... \\
+	$b_1+\frac 1n$& $b_2+\frac 1n$  & $b_3+\frac 1n0$ & ... \\
+\end{tabular}\\
+
+$\lim\limits_{n \rightarrow \infty} (b_1 + \frac 1n) = b_1$ \\
+
+$\{a_n\}$ - новая последовательность(см табл.), элементы пронумерованы уголком.
+
+\end{document}

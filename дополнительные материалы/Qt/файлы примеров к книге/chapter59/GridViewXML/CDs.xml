@@ -1,0 +1,69 @@
+<?xml version = "1.0"?>
+<!--
+// ======================================================================
+//  CDs.xml
+// ======================================================================
+//                   This file is a part of the book 
+//             "Qt 5.10 Professional programming with C++"
+//                       http://qt-book.com
+// ======================================================================
+//  Copyright (c) 2017 by Max Schlee
+// ======================================================================
+-->
+
+<CDs>
+    <CD>
+        <artist>Amaranthe</artist>
+        <album>Amaranthe</album>
+        <year>2011</year>
+        <cover>qrc:/covers/Amaranthe.jpg</cover>
+    </CD>
+    <CD>
+        <artist>Dark Princess</artist>
+        <album>Without You</album>
+        <year>2005</year>
+        <cover>qrc:/covers/WithoutYou.jpg</cover>
+    </CD>
+    <CD>
+        <artist>Within Temptation</artist>
+        <album>The Unforgiving</album>
+        <year>2011</year>
+        <cover>qrc:/covers/TheUnforgiving.jpg</cover>
+    </CD>
+    <CD>
+        <artist>Evanescence</artist>
+        <album>Fallen</album>
+        <year>2003</year>
+        <cover>qrc:/covers/Fallen.jpg</cover>
+    </CD>
+    <CD>
+        <artist>Tristania</artist>
+        <album>Rubicon</album>
+        <year>2010</year>
+        <cover>qrc:/covers/Rubicon.jpg</cover>
+    </CD>
+    <CD>
+        <artist>Epica</artist>
+        <album>The Divine Conspiracy</album>
+        <year>2007</year>
+        <cover>qrc:/covers/TheDivineConspirancy.jpg</cover>
+    </CD>
+    <CD>
+        <artist>Delain</artist>
+        <album>April Rain</album>
+        <year>2010</year>
+        <cover>qrc:/covers/AprilRain.jpg</cover>
+    </CD>
+    <CD>
+        <artist>Sirenia</artist>
+        <album>The End of it All</album>
+        <year>2011</year>
+        <cover>qrc:/covers/NineDestiniesAndADownfall.jpg</cover>
+    </CD>
+    <CD>
+        <artist>Nightwish</artist>
+        <album>Dark Passion Play</album>
+        <year>2007</year>
+        <cover>qrc:/covers/DarkPassionPlay.jpg</cover>
+    </CD>
+</CDs>

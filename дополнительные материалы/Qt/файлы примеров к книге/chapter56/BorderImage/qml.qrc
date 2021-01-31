@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file alias = "button.png">../../common/button.png</file>
+    </qresource>
+</RCC>

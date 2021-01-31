@@ -1,0 +1,62 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage{cmap}                   
+\usepackage{mathtext}   
+\usepackage{mathtools}
+\usepackage{amssymb,amsmath}
+\usepackage{tipx}
+\usepackage{tabularx,array,booktabs}
+\usepackage{algorithm2e}
+\usepackage{listings}
+\usepackage{hyperref}
+%изображения
+\usepackage{graphicx}%Вставка картинок правильная
+\usepackage{float}%"Плавающие" картинки
+\usepackage{wrapfig}%Обтекание фигур (таблиц, картинок и прочего)
+\usepackage{setspace}
+\usepackage[normalem]{ulem}
+\usepackage{arcs}
+\usepackage[T1,T2A]{fontenc}        
+\usepackage[utf8]{inputenc}         
+\usepackage[english, russian]{babel} 
+\usepackage[top=0.35in, bottom=0.5in, left=0.3in,right=0.3in]{geometry}
+\usepackage{scalerel}
+\usepackage{stackengine}
+\stackMath
+\newtheorem{theorem}{Теорема}
+\newtheorem{definition}{Определение}
+\newtheorem{proposal}{Предположение}
+\newtheorem{notice}{Замечание}
+\newtheorem{statement}{Положение}
+\newtheorem{corollary}{Следствие}
+\newtheorem{lemma}{Лемма}
+\newtheorem{observation}{Наблюдение}
+\newtheorem{problem}{Задача}
+\newtheorem{claim}{Решение}
+
+\newcommand{\RomanNumeralCaps}[1]
+    {\MakeUppercase{\romannumeral #1}}
+\newenvironment{shortlist}
+  {\renewcommand{\item}{\renewcommand{\item}{\unskip\space\textbullet~}}}
+  {}
+\renewcommand{\tabularxcolumn}[1]{m{#1}}    
+\newcommand\reallywidesmile[1]{%
+\stackon[0.5pt]{#1}{%
+\stretchto{%
+  \scaleto{%
+    \scalerel*[\widthof{#1}]{\mkern-1.5mu\smile\mkern-2mu}%
+    {\rule[-\textheight/2]{1ex}{\textheight}}%
+  }{\textheight}%
+}{0.8ex}}%
+}
+\parskip 1ex
+
+
+\title{Методы и стандарты программирования}
+\author{КМБО-02-19}
+\begin{document}
+
+    \maketitle
+    \input GeneralOOP.tex
+    \input Classes&Objects.tex
+\end{document}

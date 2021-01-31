@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file alias = "new.htm">doc/new.htm</file>
+        <file alias = "close.htm">doc/close.htm</file>
+        <file alias = "open.htm">doc/open.htm</file>
+        <file alias = "logo.jpg">doc/logo.jpg</file>
+        <file alias = "exit.htm">doc/exit.htm</file>
+        <file alias = "save_as.htm">doc/save_as.htm</file>
+        <file alias = "index.htm">doc/index.htm</file>
+    </qresource>
+</RCC>

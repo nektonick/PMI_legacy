@@ -1,0 +1,743 @@
+\documentclass{article}
+
+
+\usepackage{cmap}                   
+\usepackage{mathtext}               
+\usepackage[T1,T2A]{fontenc}        
+\usepackage[utf8]{inputenc}         
+\usepackage[english, russian]{babel} 
+
+\usepackage[top=0.35in, bottom=0.5in, left=0.3in, right=0.3in]{geometry}
+\usepackage{mathtools}              
+
+\usepackage{amssymb}                
+\usepackage{amsthm}                 
+\usepackage{amstext}                
+\usepackage{amsfonts}               
+\usepackage{icomma}                 
+\usepackage{enumitem}              
+\usepackage{array}                  
+\usepackage{multirow}
+\usepackage{setspace}
+
+\usepackage{algorithm}              
+\usepackage{algorithmicx}           
+\usepackage[noend]{algpseudocode}   
+\usepackage{listings}              
+\renewcommand{\algorithmicrequire}{\textbf{Input:}}              
+\renewcommand{\algorithmicensure}{\textbf{Output:}}              
+\floatname{algorithm}{Algorithm}                                 
+\renewcommand{\algorithmiccomment}[1]{\hspace*{\fill}\{// #1\}}
+\newcommand{\algname}[1]{\textsc{#1}}                          
+\usepackage{physics}
+
+\usepackage{euscript}               
+\usepackage{mathrsfs}               
+
+%% Графика
+\usepackage{graphicx}       
+\graphicspath{{images/}}            
+\usepackage{tikz}  
+\usetikzlibrary{patterns}                 
+\usepackage{pgfplots}              
+\usepackage{circuitikz}
+
+
+\usepackage{indentfirst}                    
+\usepackage{epigraph}                       
+\usepackage{fancybox,fancyhdr}              
+\usepackage[colorlinks=true,citecolor=blue]{hyperref} 
+\usepackage{titlesec}                       
+\usepackage[normalem]{ulem}                 
+\usepackage[makeroom]{cancel}               
+\usepackage{dsfont}
+
+\usepackage{diagbox}
+\usepackage{makecell}
+
+\usepackage{csquotes}
+
+ 
+\renewcommand{\headrulewidth}{1.8pt}    
+\renewcommand{\footrulewidth}{0.0pt}    
+
+\usepackage{forest} 
+
+
+\usetikzlibrary{quotes,angles}
+
+\usetikzlibrary{positioning,intersections}
+
+\usetikzlibrary{through}
+
+\usepackage{enumitem}
+
+
+\newcommand{\bitem}{\item\hspace*{1em}\ignorespaces}
+
+\usepackage{graphicx}
+
+\newtheorem{definition}{Definition}[section]
+
+\newtheorem*{task}{Task}
+\newtheorem*{task0}{Task 0}
+\newtheorem*{task1}{Task 1}
+\newtheorem*{task2}{Task 2}
+\newtheorem*{task3}{Task 3}
+\newtheorem*{task4}{Task 4}
+\newtheorem*{task5}{Task 5}
+\newtheorem*{task6}{Task 6}
+\newtheorem*{task7}{Task 7}
+\newtheorem*{task8}{Task 8}
+\newtheorem*{task9}{Task 9}
+\newtheorem*{task10}{Task 10}
+\newtheorem*{task11}{Task 11}
+\newtheorem*{task12}{Task 12}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposal}{Proposal}
+\newtheorem{notice}{Notice}
+\newtheorem{statement}{Statement}
+\newtheorem{corollary}{Corollary}
+\newtheorem{lemma}{Lemma}
+\newtheorem{observation}{Observation}
+\newtheorem{problem}{Problem}
+\newtheorem{claim}{Claim}
+
+
+\newcommand{\note}{\underline{Note:} }
+\newcommand{\fact}{\underline{\textbf{Fact}:} }
+\newcommand{\example}{\underline{Example:} }
+
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage[T1,T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage[all]{xy}
+\usepackage[left=2cm,right=2cm, top=2cm,bottom=2cm,bindingoffset=0cm]{geometry}
+\usepackage{mathtext}
+\usepackage{amssymb}
+
+\usepackage{amsmath}
+\newcommand{\Mat}{\operatorname{M}}
+\usepackage{tabto}
+
+\renewcommand{\Re}{\mathrm{Re\:}}
+\renewcommand{\Im}{\mathrm{Im\:}}
+\newcommand{\Arg}{\mathrm{Arg\:}}
+\renewcommand{\arg}{\mathrm{arg\:}}
+\newcommand{\Mat}{\mathrm{Mat}}
+\newcommand{\id}{\mathrm{id}}
+\newcommand{\aut}{\mathrm{aut}}
+\newcommand{\isom}{\xrightarrow{\sim}} 
+\newcommand{\leftisom}{\xleftarrow{\sim}}
+\newcommand{\Hom}{\mathrm{Hom}}
+\newcommand{\Ker}{\mathrm{Ker}\:}
+\newcommand{\rk}{\mathrm{rk}\:}
+\newcommand{\diag}{\mathrm{diag}}
+\newcommand{\ort}{\mathrm{ort}}
+\newcommand{\pr}{\mathrm{pr}}
+\newcommand{\vol}{\mathrm{vol\:}}
+\renewcommand{\mod}{\mathrm{\: mod\:}}
+\DeclareMathOperator*\lowlim{\underline{lim}}
+\DeclareMathOperator*\uplim{\overline{lim}}
+\newcommand{\nd}{\mathbin{\&}}
+
+\newcommand{\X}{\mathbb{X}}
+\newcommand{\Y}{\mathbb{Y}}
+\makeatletter
+\makeatother
+
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Qq}{\mathcal{Q}}
+\newcommand{\N}{\mathbb{N}}
+\makeatletter
+
+\makeatother
+
+\makeatletter
+\makeatother
+
+\makeatletter
+\makeatother
+
+\renewcommand{\S}{\mathbb{S}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}} 
+\newcommand{\B}{\mathbb{B}}
+\renewcommand{\C}{\mathbb{C}}
+\renewcommand{\L}{\mathscr{L}}
+%\renewcommand{\P}{\mathds{P}}
+
+
+\newcommand{\orthog}{\mathop{\bot}}
+\renewcommand*\d{\mathop{}\!\mathrm{d}}
+\renewcommand*\dd{\mathop{}\!\partial}
+
+%\renewcommand{\Pr}{\mathds{P}}
+\newcommand{\pn}{\xrightarrow{\text{a. s.}}}
+\newcommand{\pp}{\xrightarrow{\Pr}}
+\newcommand{\pd}{\xrightarrow{d}}
+
+
+
+\newcommand{\fe}{\varphi}
+\newcommand{\e}{\varepsilon}
+\newcommand{\ind}{\mathbin{\perp\!\!\!\perp}}
+\newcommand{\Gauss}{\mathrm{Gauss}}
+\newcommand{\hence}{\longrightarrow}
+\newcommand{\bto}{\Longrightarrow}
+\newcommand{\Bin}{\mathrm{Bin}}
+\newcommand{\Bern}{\mathrm{Bern}}
+\newcommand{\Geom}{\mathrm{Geom}}
+\newcommand{\Uni}{\mathrm{U}}
+\newcommand{\Exp}{\mathrm{Exp}}
+\newcommand{\Ko}{\mathrm{Ko}}
+\newcommand{\No}{\mathcal{N}}
+\newcommand{\Pois}{\mathrm{Pois}}
+     
+
+\begin{document}
+
+\title{ДГТВ. Дз 1.}
+\author{Диваков Алексей}   
+\date{}
+
+
+
+ 
+\textit{
+Обозначим через $N_{n, x}$ -- число путей (траекторий) случайного блуждания из точки $(0, 0)$ в $(n, x)$. Точка $(a, b)$ означает, что
+блуждание в момент времени $a$ принимает значение $b$. 
+}   
+   
+    \begin{task0}
+        Чему равно $N_{n,x}$? 
+
+    \end{task0}
+    \begin{proof}[Решение:]
+    Для осмысленности положим $n - x = 2k$, для некоторого целого $k$. Дабы оказаться в точке прибытия, мы должны сделать $k$ шагов вниз и $k+x$ шагов вверх. Имеем $C_{n}^{k}$.
+    
+    \end{proof}
+   
+    \vspace{\baselineskip}
+    \begin{task1}
+        \textbf{Принцип отражения.} Пусть $A = (a, \alpha)$ и $B = (b, \beta)$ -- две точки, причем $b > a \geq 0$,
+        $\alpha, \beta > 0$. Докажите, что число путей из $A$ в $B$, пересекающих нулевой уровень, равно числу путей из $A' = (a, -\alpha)$ в $B$.
+    \end{task1}
+   
+    \begin{proof}[Решение:]
+       Разобьём траектории $A \rightarrow B$ на классы, по признаку "момент первого касаня нуля = $i$". Назовём объекты с таким параметром \textit{i-траектории}. -  
+       Построим отображение на множестве траекторий.
+       Для любой целочисленной точки траектории:
+       \begin{equation*}
+       \begin{cases}
+       (n, x) \xrightarrow{f} (n, -x), n < i\\
+       (n, x) \xrightarrow{f} (n, x), n \geq i
+       \end{cases}
+       \end{equation*}
+
+       Заметим, что $f(f^{-1}(x)) = x$ для траекторий $A \rightarrow B$, а также $f^{-1}(f(y)) = y$ для траекторий $A' \rightarrow B$ лежащих в одном i-классе. А также что $f$ наследует принадлежность разбиению на i-классы, индуцированному на множестве отраженных траекторий.
+       А тогда перед нами биекция между i-траекториями. Но i-траектории суть разбиение всех данных. А тогда перед нами биекция между путями из $A \rightarrow B$ и $A' \rightarrow B$. 
+       
+     \end{proof}
+                
+     \vspace{\baselineskip}
+    \begin{task2}
+            \textbf{Задача о баллотировке.} Пусть $x$, $n$ -- натуральные числа. Докажите что число путей из $(0, 0)$ в $(n, x)$, которые не пересекают нулевой уровень (кроме начального момента времени) равно ${x\over n} N_{n, x}$.
+        \end{task2}
+    \begin{proof} [Решение:]
+    Заметим, что условие на непересечение нулевого уровня траекторией, окромя начала, значает что мы непременно окажемся на 1ом шаге в точке $(1, 1)$. 
+    
+    Вместо того, чтобы считать количество траекторий не пересекающих нулевой уровень напрямую - поссчитаем количество траектори $(1, 1) \rightarrow (n, x)$, касающихся нулевого уровня.
+    Из прошлой задачи известно, что таких траекторий столько же, сколько и путей $(1, -1) \rightarrow (n, x)$, которых в точности $N_{n-1, x+1}$, если сдвинуть начало координат. А точнее $C_{n-1}^{\frac{n+x}{2}}$.
+    
+    Вычтем их из всех траекторий $(1, 1) \rightarrow (n, x)$, кол-во которых равно $N_{n-1, x-1}$. Имеем разность $C_{n-1}^{\frac{n+x-2}{2}}$
+     - $C_{n-1}^{\frac{n+x}{2}}$
+    \end{proof}
+    
+    Обозначим: $a := \frac{n+x}{2}$, $b := n-1$. Тогда $\frac{x}{n} = \frac{2a - b - 1}{b + 1}$
+    
+\[
+    C_{n-1}^{\frac{n+x-2}{2}} - C_{n-1}^{\frac{n+x}{2}} = \frac{a b!}{a!(b-a+1)!} - \frac{b!}{a! (b-a)!} = \frac{a b!}{a (b-a+1)!} - \frac{b! (b-a+1)}{a! (b-a+1)!} = \frac{b!(2a - b - 1)}{a! (b-a+1)!}
+\]
+\[
+    \frac{x}{n} N_{n, x} = \frac{(2a - b - 1)(b+1)!}{(b+1)(a!)(b + 1 - a)!} = \frac{b!(2a - b - 1)}{a! (b-a+1)!}
+    
+\]
+
+Получилось одно и то же, выходит мы доказали требуемое тождество.
+    
+\vspace{\baselineskip}
+
+\begin{task3}
+            Пусть $(S_n, n\in \Z)$ -- симметричное случайное блуждание на прямой. Используя предыдущую задачу, докажите что
+            \[
+                \Pr{S_1 \neq 0,\dots, S_{2n} \neq 0} = C_{2n}^n 2^{-2n}.
+            \]
+        \end{task3}
+        \begin{proof}[Решение]
+        Побьём траектории на классы по параметру $(i, 2n)$, (высота траектории на последнем шаге). Тогда в сущности нам необходимо просуммировать ряд:
+        
+        \[
+        \sum_{x \in \mathbb {Z} \backslash \{0\}}^{} \frac{x}{2n} N_{2n, x} = \sum_{x \in [-2n, 2n] \backslash \{0\}}   \frac{x}{2n} N_{2n, x} = 2 \sum_{x = 1}^{n}   \frac{x}{n} C_{2n}^{n+x} 
+        \]
+        
+        
+        \vspace{\baselineskip}
+        
+        \texttt{[Видимо в качестве доказательства предполагается именно суммирование этого ряда, но автор не силён в}
+        
+        \texttt{тождественных преобразованиях - докажем формулу по-иному.]}\\
+        
+        Введём волшебную формулу:
+        
+\[
+         T(n+2) = 4 \cdot T(n) - 2 \cdot t(n, 2)
+\]
+        
+        Объясним её следующим образом, забыв о условии задачи:
+        
+        \begin{enumerate}
+            \item[1)] $T(n)$ - суть кол-во траеткорий с $n$-шагами, не задевшими ни разу нуля, выйдя из него.
+            \item[2)] $t(n, i)$ - суть кол-во траекторий с $n$-шагами, не задевшими ни разу нуля, выйдя из него, окончившихся на высоте $i$. 
+            
+        \end{enumerate}
+        
+        Представим картинку траекторий, не задевших в процессе построения нулевого уровня. Их количество обозначенно как $T(n)$, где $n$ - количество шагов. Представив что мы в декартовой системе координат и стартовали из $(0, 0)$ вправо - сосредоточимся на вертикальной прямой $x = n$. Точки там - в сущности концы траекторий, не задевших нуля. Посмотри мна ближайшую к горизонталеьонй прямой $y = 0$ (например свехрху) точку. В зависимости от чётности - её высота $1$ или $2$.
+        
+        \vspace{\baselineskip}
+        
+        Оъясним $t(n, 2)$
+        
+        %Если её высота $1$ (при нечётном $n$), то попробуем стартовать из этой точки, сделав еще $2$ шага. Первый шаг вверх гарантирует корркетность продлжения траектории. Первый шаг вниз - неременно пересекает $y = 0$.
+        %Две из четырёх траекторий недолжны учитываться. (Четыре из восьми с учётом отражения)
+        
+        Если её высота $2$ (при чётном $n$), то попробуем стартовать из этой точки, сделав еще $2$ шага. Только лишь одно из четырёх продолжений траектории пересекает $y = 0$, два шага вниз никак делать нельзя. Одна из четырёх траектории не должна учитываться. (Две из восьми с учётом отражания, отсюда и коэффициент 2).
+        
+        \vspace{\baselineskip}
+        
+        Объясним $4 \cdot T(n)$.
+        
+        Тут ситуация интуитивнее, из всякой точки $(n, i)$, на которой закончилась траектория, не касающаяяся нуля, окромя начала - исходит по $4$ новых траектории. Все они не пересекут $0$, коль скоро $i \neq 2$. B свою очередь $i = 0$ мы, как мы помним, не рассматриваем по построению.
+        \vspace{\baselineskip}
+        Итак, из соображений выше - мы получили формулу:
+\[
+         T(n+2) = 4 \cdot T(n) - 2 \cdot t(n, 2)
+\]
+        Теперь воспомним о задаче, которую мы решаем. В сущности теперь нам требуется показать, что $T(2n) = C_{2n}^{n}$, положив вручную $T(0) := 1$, $t(0, 2) = 1$ на всякий случай. База индукции проверяется вручную картинкой.
+        
+        Заметим, что $2 \cdot t(2n, 2)$ - в сущности равно $\frac{2}{2n} N_{2n, 2} = \frac{1}{n} C_{2n}^{n+1}$ из предыдущей задачи. Это траектории, что после $2n$ шагов имеют расстояние $2$ от нулевого уровня, не задевая ноль в процессе порождения.
+\[
+        T(2n + 2) = 4 T(2n) - 2t(2n, 2) 
+\]
+
+\[
+        C_{2n + 2}^{n+1} \stackrel{?}{=} 4 C_{2n}^{n} - 2 C_{2n}^{n+1}
+\]
+
+\[
+        \frac{(2n+2)!}{(n+1)! \cdot (n+1)!} \stackrel{?}{=} 4\frac{(2n)!}{n! \cdot n!} - \frac{2 \cdot (2n)! \cdot n}{n \cdot (n-1)! \cdot (n+1)! \cdot n!}
+\]
+
+\[
+        \frac{(2n)! \cdot (2n + 1) \cdot (2n + 2)}{ n! \cdot n! \cdot (n+1) \cdot (n+1)} \stackrel{?}{=} \frac{4 \cdot (2n)!}{n! \cdot n!} - 2 \frac{2 \cdot (2n)!}{n! \cdot n! \cdot (n+1}
+\]
+
+\[
+        \frac{(2n+2) \cdot (2n+1)}{(n+1) \cdot (n+1)} \stackrel{?}{=} 4 - \frac{2}{n+1}
+\]
+
+\[
+        4n^2 + 2n + 4n + 2 = (4n +2) \cdot (n+1)
+\]
+
+В самом деле.
+\vspace{\baselineskip}
+
+Выходит, мы доказали требуемое в задаче, заметив лишь, что вероятность пройти по фиксированной траектории длины $2n$ = $\frac{1}{2^{2n}}$. Итак:
+
+\[
+                \Pr{S_1 \neq 0,\dots, S_{2n} \neq 0} = C_{2n}^n 2^{-2n}.
+\]
+
+Попутно можно заметить следующий замечательный факт, что траекторий, оканчивающихся через $2n$ шагов в нуле (их $C_{2n}^{n}$): в точности столько же, сколько и траекторий длины $2n$, что за $2n$ шагов не касаются нуля, окромя выхода из него.
+
+\vspace{\baselineskip}
+
+А еще мы доказали следующую комбинаторную формулу:
+
+\[
+        2 \sum_{x = 1}^{n}   x C_{2n}^{n+x} = n C_{2n}^{n} 
+\]
+     
+\textit{*Заметим для идейности, что перед нами некоторым образом нормированная строка треугольника паскаля, без её центра слева от равенства; И центр, домноженный на свой индекс - справа}.
+        \end{proof}
+       
+       
+        \vspace{\baselineskip}
+        
+        
+    \vspace{\baselineskip}
+    \begin{task4}
+            Пусть $(S_n, n\in \Z)$ -- симметричное случайное блуждание на прямой. Используя принцип отражения докажите, что для $N > 0$
+            \[
+            \Pr{ \max S_k \geq N, S_n < N} = \Pr{S_n > N}.
+            \]
+        \end{task4} 
+    \begin{proof} [Решение:]
+    Зная, что всякая траектория фиксированной длины равновероятна - покажем равномощность классов траекторий.
+    
+    \vspace{\baselineskip}
+    
+    Построим биекцию между следующими множествами траекторий длины $n$:
+    
+    $C_1 := \{$траектории, такие что: $\max S_k \geq N, S_n < N\}$ и $C_2 := \{$траектории, такие что: $S_n > N\}$ 
+    
+
+    \vspace{\baselineskip}
+    
+    Побьём траектории на классы по параметру "самая левая точка пересечения $y = N$ " , в любом элементе $C_1$ она есть по построению, в $C_2$ - в силу дискретной непрерывности. Классы покрывают каждое множество $C_1$, $ C_2$ в отдельности и не пересекаются. Фиксируем произвольный индекс $i$, и рассмотрим траектории из обоих классов, что на $i$-ом шаге имеют первое своё пересечение высоты $N$. Назовём такие подмножества $C_{i, j}$ 
+    
+    Определим действие f на подмножестве $C_{i, j}$ множества $C_i$, $i \in \{1, 2\}, j \in [0 ; n]$, коль скоро мы мним траектории, как множества точек в $\mathbb{Z}^2$ для всякой точки траектории имеем:
+    
+    \begin{equation*}
+       \begin{cases}
+       (n, x) \xrightarrow{f} (n, -x), n > j\\
+       (n, x) \xrightarrow{f} (n, x), n \leq j
+       \end{cases}
+       \end{equation*}
+       
+       
+    Пусть $x, y$ - произвольные траектории $x \in C_1$, $y \in C_2$ 
+    Тогда заметив, что $f^{-1}(f(x)) = x$ а также, что $f(f^{-1}(y)) = y$ видим, что перед нами биекция меж $C_1$ и $C_2$. А тогда они равномощны.
+    
+    \end{proof}
+    
+    
+    
+    
+        \begin{task5}
+            Пусть $(S_n, n\in \Z_+)$-- симметричное случайное блуждание на прямой. Используя результат задачи 4, найдите распределение случайной величины
+            \[
+                M_n = \underset{k\leq n}\max~ S_k.
+            \]
+        \end{task5}
+        
+        \begin{proof} [Решение:]
+        Посмотрим на вероятность блужданя за $n$ шагов зайти на уровень $y = N$.
+        
+        \[
+        \Pr [\underset{k \leq n}{max} S_k \geq N] =
+        \Pr [\underset{k \leq n}{max} S_k \geq N, S_n < N] + \Pr [\underset{k \leq n}{max} S_k \geq N, S_n \geq N] = 
+        \]
+        \[
+        = \Pr[S_n > N] + \Pr[S_n > N - 1] 
+        \]
+        
+Тогда:
+        \[
+        \Pr[\underset{k \leq n}{max} S_k = N] = \Pr [\underset{k \leq n}{max} S_k \geq N] - \Pr [\underset{k \leq n}{max} S_k \geq N+1] =
+        \]
+        \[
+        = \Pr[S_n > N] + \Pr[S_n > N - 1]  - ( \Pr[S_n > N + 1] + \Pr[S_n > N] ) = \Pr[S_n \geq N] - \Pr[S_n \geq N + 2] =
+        \]
+        \[
+        = \Pr[S_n = N] + \Pr[S_n = N+1] = I_{\{[N]_2 = [n]_2\}} \frac{C_{n}^{\frac{N+n}{2}}}{2^n} + I_{\{[N + 1]_2 = [n]_2\}}\frac{C_{n}^{\frac{N+1+n}{2}}}{2^n}
+        \]
+        
+        
+        \end{proof}
+        
+        
+                \begin{task6}
+            Пусть $(S_n, n\in \Z_+)$-- симметричное случайное блуждание на прямой. Обозначим $M_n = \underset{k \leq n}{S_k}$. Найдите ассимптотику $E[M_n]$, $n \rightarrow \infty$
+
+        \end{task6}
+        \begin{proof}[Решение]
+            \
+                Рассмотрим только тот случай, когда $n$ четное, для удобства, в силу того, что на ассимптотику это не влияет:
+               
+                \[
+                    E[M_n] = \sum_{k=1}^{n} k \Pr[S_n = k] + \Pr[S_n = k+1]
+                \]
+               $m := n/2$, тогда:
+                \[
+                    E[M_n] = \sum_{k=1}^{n} k(\Pr[S_n = k] + \Pr[S_n = k+1]) = \sum_{k=1}^{m} 2k  \Pr [S_{2m} = 2k] =
+                \]
+                \[
+                     2^{-2m}\sum_{k=1}^{m} 2k  C_{2m}^{m+k} = \frac{m C_{2m}^m}{2^{2m}} \sim \{Стирлинг\} \sim
+                    \frac{m 4^m}{2^{2m} \sqrt{ m \pi}} = \sqrt{\frac{m}{\pi}} = \sqrt{\frac{n }{2 \pi}}
+                    
+                \]
+        \end{proof}
+       
+       
+       
+        \vspace{\baselineskip}
+   
+        
+        \begin{task7}
+            Пусть $(S_n, n\in \Z_+)$-- симметричное случайное блуждание с вероятностью шага вправо $p$ и шага влево $q$, $p + q = 1$. 
+            
+            1) Докажите, что для $m \leq N$ выполнено:
+            
+            \[
+            \Pr[\underset{k \leq n}{max} S_k \geq N, S_n = m] = C_{n}^{u} p^v q^{n-v}
+            \]
+где $v := \frac{n + m}{2}$, $u := v - N$.
+
+            2) Для симметриченого блуждания докажите равенство:
+            
+            \[
+            \Pr[\underset{k \leq n}{max} S_k = N, S_n = m] = \Pr[S_n = 2N - m] - \Pr[S_n = 2N - m + 2]
+            \]
+        \end{task7}
+        
+        
+        \begin{proof}[Решение(1):]
+        
+        \vspace{\baselineskip}
+        
+        Здесь прослеживается идея задачи 4. Предлагается фиксировать правое касание траекторией $y = N$ и отразить от $y = N$ все точки траектории, что справа. Левые же оставить как есть.
+        
+        Тогда с точки зрения количества траекторией - ничего не поменяется в силу биекции. А тогда всего траекторий:
+        \[
+        С_{n}^{\frac{n + 2N - m}{2}} = С_{n}^{u}.
+        \]
+        
+        Вероятность же $p^v q^{n-v}$ появляется из соображений того, что шагов вправо(движений траектории вверх) в точности $m + \frac{n - m}{2} = \frac{n+m}{2} = v$, а шагов влево(движений траектории вниз) в точности $\frac{n-m}{2} = n - v$.
+        \end{proof}
+        
+        \vspace{\baselineskip}
+        
+        \begin{proof}[Решение(2):]
+        
+        Порассуждаем:
+        
+        \[
+        \Pr[\underset{k \leq n}{max} S_k = N, S_n = m] = \Pr[\underset{k \leq n}{max} S_k \geq N, S_n = m] -
+        \Pr[\underset{k \leq n}{max} S_k \geq N + 1, S_n = m] =
+        \]
+        
+        \[
+        = \frac{C_{n}^{\frac{n + 2N - m}{2}}}{2^n} - \frac{C_{n}^{\frac{n + 2N - m + 2}{2}}}{2^n}
+        \]
+        
+        Заметим, что вероятность конкретной траектории из $n$ шагов в нашем случае в точности $\frac{1}{2^n}$, а тогда в силу номера 0 - всё доказано.
+        
+        \end{proof}
+        
+        
+        
+        \vspace{\baselineskip}
+        
+        \begin{task8}
+            Пусть $(S_n, n\in \Z_+)$-- симметричное случайное блуждание в \mathbb{Z}^d. Пусть $u_{2n} := P(S_1 \neq 0, S_2 \neq 0, \cdots , S_{2n-1} \neq 0, S_{2n} = 0)$.
+            
+            Покажите, что:
+            
+            \[
+            \Pr[S_{2n} = 0] = \sum_{k=1}^{n} u_{2k} \Pr[S_{2n - 2k} = 0] 
+            \]
+        \end{task8}
+        
+        
+        \begin{proof}[Решение:]
+        Побьём траектории, что на $2n$-ом шаге имеют значение ноль на классы по признаку: первое касание нуля.
+        
+        Заметим, что коль скоро траекотрия коснулась нуля на $2k$-ом шаге с вероятностью $u_{2k}$, то продолжить её до $2n$-ого шага можно в точности тем же количеством способов, что и пройти оставшееся количество шагов, выйдя из нуля и вернувшись в ноль. Подобное продолжение возможно в точности с вероятностью пройти $2n-2k$ шага, выйдя из нуля и закончивши в нуле. 
+        
+        Отсюда, суммируя по всем возможностям впервые коснуться нуля(что суть разбиение желаемых траекторй) и имеем формулу из задачи. 
+        \end{proof}
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+                \begin{task9}
+                  Пусть $(S_n, n\in \Z_+)$-- случайное блуждание в $\Z ^d$. Докажите, что 
+      \[
+      \Pr {\text{процесс $S_n$ когда-нибудь вернется в $0$}} = 1
+      \Leftrightarrow
+      \sum_{n=1}^{+\infty} \Pr{S_{2n} = 0} = +\infty.
+            \]
+        \end{task9}
+        
+        
+
+        
+        \begin{proof} [Решение:]
+        
+    Интерпретируем $\Pr {\text{процесс $S_n$ когда-нибудь вернется в $0$}} = h$ как:
+    
+    $\Pr [ \overset{+ \infty}{\underset{i = 1}\bigsqcup } u_{2i}] =$$\sum_{k=1}^{+ \infty} \Pr[u_{2k}]$$ = h $, где $u_{2i} := \{S_1 \neq 0, S_2 \neq 0, \dots S_{2i - 1} \neq 0, S_{2i} = 0\}$.
+    
+    \vspace{\baselineskip}
+    
+    Нарисуем $\sum_{i=1}^{+\infty} \Pr[S_{2i} = 0]$ как бесконечную вправо-вниз нижнетреугольную матрицу, опустив символы вероятности для удобства:
+    
+    $u_2 S_0 = S_2$ 
+    
+    $u_2 S_2 + u_4 S_0 = S_4$
+    
+    $u_2 S_4 + u_4 S_2 + u_6 S_0 = S_6$
+    
+    $u_2 S_6 + u_4 S_4 + u_6 S_2 + u_8 S_0 = S_8$
+    
+    $u_2 S_8 + u_4 S_6 + u_6 S_4 + u_8 S_2 + u_{10} S_0 = S_{10}$
+    
+    $u_2 S_{10} + u_4 S_8 + u_6 S_6 + u_8 S_4 + u_{10} S_2 + u_{12} S_0 = S_{12}$
+    
+    $u_2 S_{12} + u_4 S_{10} + u_6 S_8 + u_8 S_6 + u_{10} S_4  + u_{12} S_2 + u_{14} S_0 = S_{14}$
+    
+    $u_2 S_{14} + u_4 S_{12} + u_6 S_{10} + u_8 S_8 + u_{10} S_6 + u_{12} S_4 + u_{14} S_2 + u_{16} S_0 = S_{16} $
+    
+    \cdots \cdots \cdots \cdots \cdots \cdots \cdots \cdots \cdots \cdots \cdots \cdots
+    \cdots \cdots \cdots \cdots \cdots \cdots
+    \cdots \cdots \cdots \cdots \cdots \cdots
+    
+    \vspace{\baselineskip}
+    
+    Выделим абстрактный треугольник, натянутый на "координаты"(индексы при $u$ и $S$ соответственно) $[(2, 0), (2, i), (i+2, 0)]$.
+    
+    Теперь выделим его "параллелограммную" оболочку, натянутую на индексы $[(2, 0), (2, i), (i+2, i), (i+2, 0)]$.
+    
+    Заметим, что треугольник содержится в параллелограмме. Казалось бы, для сумм, которые эти фигуры содержат - имеет место быть нестрогое неравенство. Но (!). Устремив $i \rightarrow + \infty$ мы получим, что их "площади" в пределе равны, они когда-нибудь покроют сколь угодно далёкую частичную сумму ряда из $S_{2i}$. А значит и суммы, которые покрывает как бесконечно растущий такой треугольник, так и бесконечно растущий такой параллелограмм равны.
+    
+    Теперь мы имеем равенство, а также следующую цепочку рассуждений, пользуясь результатами прошлой задачи:
+    
+    \[
+    \sum_{i=1}^{+\infty} \Pr[S_{2i} = 0] = \sum_{i=1}^{+\infty} \Pr[u_{2i}] \cdot \sum_{i=0}^{+\infty} \Pr[S_{2i} = 0]
+    \]
+    \[
+    \sum_{i=1}^{+\infty} \Pr[S_{2i} = 0] = \sum_{i=1}^{+\infty} \Pr[u_{2i}] \cdot S_0 + \sum_{i=1}^{+\infty} \Pr[u_{2i}] \cdot \sum_{i=1}^{+\infty} \Pr[S_{2i} = 0]
+    \]
+    \[
+    \sum_{i=1}^{+\infty} \Pr[S_{2i} = 0] - \sum_{i=1}^{+\infty} \Pr[u_{2i}] \cdot \sum_{i=1}^{+\infty} \Pr[S_{2i} = 0] =
+    \sum_{i=1}^{+\infty} \Pr[u_{2i}] \cdot
+    \]
+    \[
+    \sum_{i=1}^{+\infty} \Pr[S_{2i} = 0] (1 - \sum_{i=1}^{+\infty} \Pr[u_{2i} = 0]) = \sum_{i=1}^{+\infty} \Pr[u_{2i} = 0]
+    \]
+    \[
+    \sum_{i=1}^{+\infty} \Pr[S_{2i} = 0] = \frac{\sum_{i=1}^{+\infty} \Pr[u_{2i} = 0]}{1 - \sum_{i=1}^{+\infty} \Pr[u_{2i} = 0]}
+    \]
+    
+    Обозначим:
+    
+    $T:= \sum_{i=1}^{+\infty} \Pr[u_{2i} = 0]$
+    
+    $D := \sum_{i=1}^{+\infty} \Pr[S_{2i} = 0]$
+    
+    \vspace{\baselineskip}
+    
+    Теперь осталось заметить, что коль скоро $T \rightarrow 1$ -- имеет место быть неограниченное возрастание $D$. Ну а если $T \rightarrow h \in [0;1)$, тогда $D$ никак не больше $\frac{1}{1 - h}$, а тогда $D$ ограниченно.
+    
+    
+        \end{proof}
+    
+    
+    \vspace{\baselineskip}
+    
+    \begin{task10}
+            Пусть $(S_n, n\in \Z_+)$ - симметричное случайное блуждание в \mathbb{Z}^d.
+        \end{task10}
+        Докажите, что $ $ оно возвращается в ноль с вероятностью единица тогда и только тогда, когда $d \leq 2$.
+        
+\begin{proof}[Решение:]
+Рассмотрим случай $d = 2$.
+
+У нас 4 события: вверх, вниз, влево, вправо. Пусть совокупно у нас $2n$ экспермиентов, в каждом из которых происходит одно из событий. Зададимся вопросом - когда мы возвращаемся в ноль через $2n$ шагов? В точности тогда, когда шагов вверх одинаково с шагами вниз, а шагов влево столько же, сколько и шагов вправо.
+
+Cколько всего таких траекторий? На помощь приходит мультиномиальный коэффициент.
+
+$k$ := количество шагов вверх.
+
+$n$ := количество шагов вправо.
+
+$n-k$ := количество шагов вниз.
+
+$n-k$ := количество шагов влево.
+
+\[
+    \sum_{k=0}^{n} \frac{(2n)!}{k! \cdot k! \cdot (n-k)! \cdot (n-k)!} = \sum_{k=0}^{n} \frac{(2n)! \cdot n! \cdot n!}{k! \cdot k! \cdot (n-k)! \cdot (n-k)!\cdot n! \cdot n!}  =
+\]
+
+\[
+    = \frac{(2n)!}{n! \cdot n!} \sum_{k=0}^{n} (C_n^k)^2 = \frac{(2n)! (C_{2n}^n)^2}{n! \cdot n!}.
+\]
+
+Поделим на вероятность конкретной траектории, а также воспользуемся формулой Стирлинга.
+
+\[
+    \left(\frac{4^n}{\sqrt{\pi n}}\right)^2 \cdot \frac{1}{4^{2n}}
+\]
+
+        Выходит, ассимптотика суммы ~ $\frac{1}{n}$, а значит ряд расходится. Пользуясь результатом прошлой задачи делаем вывод, что в случае $d = 2$ - мы обязательно придём когда-нибудь в 0. 
+        
+        
+        \vspace{\baselineskip}
+        
+        Рассмотрим случай $d := 3$
+        
+        Аналогично подсчитаем вероятность траектории первый раз достигнуть налуя на $2n-ом$ шаге.
+        
+        \[
+\frac{1}{6^{2n}} \sum_{m + k \leq n}^{} \frac{(2n)!}{m! \cdot m! \cdot k! \cdot k! \cdot (n-m-k)! \cdot (n-m-k)!} = \frac{1}{2^{2n}} C_{2n}^n \sum_{m + k \leq n}^{} \left( \frac{1}{3^n} \frac{n!}{m!k!(n-m-k)!}   \right)^2
+        
+        \]
+Воспользуемся тем, что если $a_1, a_2 \cdots a_n$ все неотрицательны, а также в сумме дают единицу, то $a_1^2 + a_2^2 + \cdots + a_n^2 \leq max(a_i)$.
+
+Этот факт можно обосновать так:
+
+\[
+    \sum_{i}^n a_i = 1 \leq n \cdot max(a_i)
+
+\]
+
+\[
+    \left(\sum_{i}^n a_i = 1\right)^2 \leq n \cdot max(a_i)
+\]
+
+Виксировав диагональ в таблице, заметим что это и есть сумма квадратов, поделим на $n$.
+
+\vspace{\baselineskip}
+
+А также заметим, что именно близкие к "n делить на количество букв, в нашем случае m, k", дают максмальный мультиномиальный коэффициент. Тогда знаменатель будет наиболее равномерен по множителям.
+
+А тогда сумма оценивается сверху следующим образом:
+
+\[
+\frac{1}{2^{2n}} C_{2n}^n \sum_{m + k \leq n}^{} \left( \frac{1}{3^n} \frac{n!}{m!k!(n-m-k)!}   \right)^2 \leq \frac{1}{2^{2n}} C_{2n}^n \frac{\sqrt{2 \pi n}\left(\frac{n}{e}\right)^n}{3^n   (\sqrt{2 \pi \frac{n}{3}})^3 \left(\left(\frac{\frac{n}{3}}{e} \right)^\frac{n}{3}\right)^3} \sim \{Кошмар\} \sim \frac{1}{n^{1,5}}
+\]
+
+        
+
+Теперь заметим интересное свойство формулы, которую мы успели пораскладывать выше. Для коэффициентов бОльшей "номиальности" будет всё аналогично, разве что под знаком суммы будет
+
+\[
+\left(\frac{1}{d^n} \frac{n!}{t_1 ! t_2 ! \cdots t_{d-1}! (n - t_1 - t_2 - \cdots - t_d)!}\right)^2
+\]
+
+что в свою очередь, оценивая максимумом будет увеличить ассимпотику знаменателя примерно на $n^{0.5}$, ведь перед суммой множитеем будет $\frac{1}{2^{2n}} \cdot C_{2n}^n$ (по крайней мере точно не уменьшать). С ростом $d$ в знаменателе (перед "Кошмар") будет увеличиваться степень корня на 1.
+
+Что в свою очередь и гарантирует нам сходимость для $d > 2$. И расcходимость для меньших размерностей. 
+
+Конечно же мы помним, что сходимость ряда суть невозвратность. А расходимость - непременное возвращение в ноль.
+\end{proof}
+        
+        
+        
+        
+\end{document}

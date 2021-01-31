@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file alias = "InfoButton.png">../../common/InfoButton.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file alias = "pyramid.obj">../../common/pyramid.obj</file>
+    </qresource>
+</RCC>

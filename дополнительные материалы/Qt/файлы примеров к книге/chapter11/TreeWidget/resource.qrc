@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file alias = "drive.bmp">imgs/drive.bmp</file>
+        <file alias = "folder.bmp">imgs/folder.bmp</file>
+    </qresource>
+</RCC>

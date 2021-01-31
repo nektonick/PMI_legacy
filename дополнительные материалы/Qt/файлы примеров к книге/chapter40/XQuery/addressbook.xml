@@ -1,0 +1,25 @@
+<?xml version = "1.0"?>
+<!--
+// ======================================================================
+//  CDs.xml
+// ======================================================================
+//                   This file is a part of the book 
+//             "Qt 5.10 Professional programming with C++"
+//                       http://qt-book.com
+// ======================================================================
+//  Copyright (c) 2017 by Max Schlee
+// ======================================================================
+-->
+<!-- My Address Book -->
+<addressbook>
+  <contact number = "1">
+      <name>Piggy</name>
+      <phone>+49 631322187</phone>
+      <email>piggy@mega.de</email>
+  </contact>
+  <contact number = "2">
+      <name>Kermit</name>
+      <phone>+49 631322181</phone>
+      <email>kermit@mega.de</email>
+  </contact>
+</addressbook>
