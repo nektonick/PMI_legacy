@@ -1,0 +1,86 @@
+.MCAD 304010000 1 74 70 0
+.CMD FORMAT  rd=d ct=10 im=i et=3 zt=15 pr=3 mass length time charge temperature tr=0 vm=0
+.CMD SET ORIGIN 0
+.CMD SET TOL 0.001000000000000
+.CMD SET PRNCOLWIDTH 8
+.CMD SET PRNPRECISION 4
+.CMD PRINT_SETUP 1.200000 0.989583 1.200000 1.200000 0
+.CMD HEADER_FOOTER 1 1 *empty* *empty* *empty* 0 1 *empty* *empty* *empty*
+.CMD HEADER_FOOTER_FONT fontID=14 family=MS^Sans^Serif points=10 bold=0 italic=0 underline=0 colrid=-1
+.CMD HEADER_FOOTER_FONT fontID=15 family=MS^Sans^Serif points=10 bold=0 italic=0 underline=0 colrid=-1
+.CMD DEFAULT_TEXT_PARPROPS 0 0 0
+.CMD DEFINE_FONTSTYLE_NAME fontID=0 name=Variables
+.CMD DEFINE_FONTSTYLE_NAME fontID=1 name=Constants
+.CMD DEFINE_FONTSTYLE_NAME fontID=2 name=Text
+.CMD DEFINE_FONTSTYLE_NAME fontID=4 name=User^1
+.CMD DEFINE_FONTSTYLE_NAME fontID=5 name=User^2
+.CMD DEFINE_FONTSTYLE_NAME fontID=6 name=User^3
+.CMD DEFINE_FONTSTYLE_NAME fontID=7 name=User^4
+.CMD DEFINE_FONTSTYLE_NAME fontID=8 name=User^5
+.CMD DEFINE_FONTSTYLE_NAME fontID=9 name=User^6
+.CMD DEFINE_FONTSTYLE_NAME fontID=10 name=User^7
+.CMD DEFINE_FONTSTYLE fontID=0 family=MS^Serif points=10 bold=0 italic=0 underline=0 colrid=-1
+.CMD DEFINE_FONTSTYLE fontID=1 family=MS^Serif points=10 bold=0 italic=0 underline=0 colrid=-1
+.CMD DEFINE_FONTSTYLE fontID=2 family=MS^Sans^Serif points=10 bold=0 italic=0 underline=0 colrid=-1
+.CMD DEFINE_FONTSTYLE fontID=4 family=MS^Sans^Serif points=10 bold=0 italic=0 underline=0 colrid=-1
+.CMD DEFINE_FONTSTYLE fontID=5 family=Courier points=10 bold=0 italic=0 underline=0 colrid=-1
+.CMD DEFINE_FONTSTYLE fontID=6 family=System points=10 bold=0 italic=0 underline=0 colrid=-1
+.CMD DEFINE_FONTSTYLE fontID=7 family=Script points=10 bold=0 italic=0 underline=0 colrid=-1
+.CMD DEFINE_FONTSTYLE fontID=8 family=Roman points=10 bold=0 italic=0 underline=0 colrid=-1
+.CMD DEFINE_FONTSTYLE fontID=9 family=Modern points=10 bold=0 italic=0 underline=0 colrid=-1
+.CMD DEFINE_FONTSTYLE fontID=10 family=MS^Serif points=10 bold=0 italic=0 underline=0 colrid=-1
+.CMD UNITS U=1
+.CMD DIMENSIONS_ANALYSIS 0 0
+.CMD COLORTAB_ENTRY 0 0 0
+.CMD COLORTAB_ENTRY 128 0 0
+.CMD COLORTAB_ENTRY 0 128 0
+.CMD COLORTAB_ENTRY 128 128 0
+.CMD COLORTAB_ENTRY 0 0 128
+.CMD COLORTAB_ENTRY 128 0 128
+.CMD COLORTAB_ENTRY 0 128 128
+.CMD COLORTAB_ENTRY 128 128 128
+.CMD COLORTAB_ENTRY 192 192 192
+.CMD COLORTAB_ENTRY 255 0 0
+.CMD COLORTAB_ENTRY 0 255 0
+.CMD COLORTAB_ENTRY 255 255 0
+.CMD COLORTAB_ENTRY 0 0 255
+.CMD COLORTAB_ENTRY 255 0 255
+.CMD COLORTAB_ENTRY 0 255 255
+.CMD COLORTAB_ENTRY 255 255 255
+.EQN 4 7 3 0 0
+{0:L}NAME:10000.1
+.EQN 0 12 11 0 0
+{0:Vp}NAME:130
+.EQN 0 10 12 0 0
+{0:bp}NAME:({1:\p}NAME)/(2)
+.EQN 0 9 17 0 0
+{0:br}NAME:-(({0:\p}NAME)/(2))
+.EQN 0 9 26 0 0
+{0:Vr}NAME:100
+.EQN 0 10 34 0 0
+{0:\l}NAME:0.03
+.EQN 4 -50 44 0 0
+{0:i}NAME:0;200
+.EQN 0 14 45 0 0
+{0:j}NAME:0;200
+.EQN 4 -14 46 0 0
+({0:x}NAME)[({0:i}NAME):-25000+(25000)/(100)*{0:i}NAME
+.EQN 0 19 47 0 0
+({0:y}NAME)[({0:j}NAME):-25000+(25000)/(100)*{0:j}NAME
+.EQN 5 -19 53 0 0
+{0:\fp}NAME({0:x}NAME,{0:y}NAME):{0:angle}NAME({0:x}NAME+({0:L}NAME)/(2),{0:y}NAME)
+.EQN 0 22 54 0 0
+{0:\fr}NAME({0:x}NAME,{0:y}NAME):{0:angle}NAME({0:x}NAME-({0:L}NAME)/(2),{0:y}NAME)
+.EQN 3 25 60 0 0
+({0:\p}NAME)/(2)={0}?_n_u_l_l_
+.EQN 4 -46 62 0 0
+{0:Fop}NAME:{0:Vp}NAME*{0:cos}NAME({0:bp}NAME)-{0:Vr}NAME*{0:cos}NAME({0:br}NAME)
+.EQN 6 0 50 0 0
+{0:F}NAME({0:x}NAME,{0:y}NAME):{0:Vp}NAME*{0:cos}NAME({0:\fp}NAME({0:x}NAME,{0:y}NAME)-{0:bp}NAME)+{0:Vr}NAME*{0:cos}NAME({0:\fr}NAME({0:x}NAME,{0:y}NAME)-{0:br}NAME)
+.EQN 5 0 56 0 0
+({0:M}NAME)[({0:i}NAME,{0:j}NAME):(1)/({0:\l}NAME)*{0:F}NAME(({0:x}NAME)[({0:i}NAME),({0:y}NAME)[({0:j}NAME))
+.EQN 9 -5 70 0 0
+{0:M}NAME{1 3 3 10 35 0 52 46 1 1 1 1 4 -1 1 1 1 1 1 4 -1 1 1 1 0 1 11 -1 1 5 0 16777215 0 100 2 NO-TITLE}{57}
+2 5 21 21 0 1 1.5 7
+1 5 4 3 0 4 1 0
+3 1 2 0.1
